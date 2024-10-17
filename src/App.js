@@ -3,6 +3,7 @@ import './App.css';
 import { HorizontalNavBar } from './components/HorizontalNavBar';
 import { Banner } from './components/Banner';
 import { Skills } from './components/Skills';
+import { Projects } from './components/Projects';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <HorizontalNavBar />
       <Banner />
       <Skills />
+      <Projects />
     </div>
   );
 }
