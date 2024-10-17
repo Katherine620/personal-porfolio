@@ -89,7 +89,7 @@ nav.navbar {
   width: 100%;
   top: 0;
   z-index: 9999;
-  transition: 0.32 ease-in-out;
+  transition: 0.32s ease-in-out;
 }
 
 nav.navbar.scrolled {
@@ -111,7 +111,7 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
 }
 
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
-nav.navbar ,.navbar-nav a.nav-link.navbar-link.active {
+nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   opacity: 1;
 }
 
@@ -128,7 +128,7 @@ span.navbar-text {
 .social-icon a {
   width: 42px;
   height: 42px;
-  background-color: rgba(217, 217, 217, 0.1);
+  background: rgba(217, 217, 217, 0.1);
   display: inline-flex;
   border-radius: 50%;
   margin-right: 6px;
@@ -147,6 +147,10 @@ span.navbar-text {
   border-radius: 50%;
   transform: scale(0);
   transition: 0.3s ease-in-out;
+}
+
+.social-icon a:hover::before {
+  transform: scale(1);
 }
 
 .social-icon a img {
