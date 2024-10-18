@@ -12,8 +12,8 @@ import githubIcon from '../assets/img/github.svg';
 import emailIcon from '../assets/img/email.svg';
 
 export const HorizontalNavBar = () => {
-  const { activeLink, setActiveLink } = useState('home');
-  const { scrolled, setScrolled } = useState(false);
+  const [ activeLink, setActiveLink ] = useState('home');
+  const [ scrolled, setScrolled ] = useState(false);
 
   useEffect(() => {
     const onScroll = () => {
